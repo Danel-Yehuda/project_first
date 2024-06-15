@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+header a.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-image: url('../images/Taskids_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 60px; /* Adjust based on the width of the logo */
+    height: 60px; /* Adjust based on the height of the logo */
+    padding-left: 0; /* No padding needed as there is no text */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Allows the search container to grow and take up available space */
+    max-width: 300px; /* Limits the maximum width */
+}
+.search-container i {
+    position: relative;
+    left: 25px;
+    color: #FFC107;
+}
+.search-container input[type="text"] {
+    padding: 5px 5px 5px 30px;
+    border: 1px solid #ccc;
+    border-radius: 32px;
+    font-size: 20px;
+    width: 100%; /* Makes the input field responsive */
+}
+.search-container input[type="text"]::placeholder {
+    color: #4F939A; /* The desired placeholder color */
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.profile-container img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.logout-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: #007bff;
+    color: white;
+    margin-left: 3px;
+}
+nav ul li.active a {
+    color: #4F939A; /* Change this to the desired color for the active link */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .search-container {
+        width: 100%;
+        max-width: none; /* Allows full width on smaller screens */
+        margin-bottom: 10px;
+    }
+    .profile-container {
+        margin-bottom: 10px;
+    }
+}
