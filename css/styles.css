@@ -84,12 +84,44 @@ nav ul li a {
     border-radius: 5px;
     cursor: pointer;
     font-size: 17px;
-    background-color: #007bff;
+    background-color: #4F939A;
     color: white;
     margin-left: 3px;
 }
 nav ul li.active a {
     color: #4F939A; /* Change this to the desired color for the active link */
+}
+
+/* Sort section styling */
+.sort-section {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sort-section span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.sort-tags {
+    display: flex;
+    gap: 10px;
+}
+.sort-tag {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.sort-tag.active {
+    color: white;
+    background-color: #4F939A; /* Change this to the desired color for the active tag */
 }
 
 /* Media Query for Responsive Design */
