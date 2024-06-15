@@ -7,6 +7,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f9fa;
 }
 header {
     display: flex;
@@ -122,6 +123,69 @@ nav ul li.active a {
 .sort-tag.active {
     color: white;
     background-color: #4F939A; /* Change this to the desired color for the active tag */
+}
+
+.publish-tasks-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.publish-tasks-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header .coins-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+#coins {
+    color: #FFC107;
+}
+
+.card-body h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card-footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.lamp-icon-red {
+    color: #DC3545;
+}
+.lamp-icon-yellow {
+    color: #FFC104;
+}
+.lamp-icon-green {
+    color: #1D9313;
 }
 
 /* Media Query for Responsive Design */
